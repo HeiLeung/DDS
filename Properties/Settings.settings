@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Arrow.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Pub_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">*</Value>
+    </Setting>
+    <Setting Name="Pub_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10001</Value>
+    </Setting>
+    <Setting Name="Sub_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">*</Value>
+    </Setting>
+    <Setting Name="Sub_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">11001</Value>
+    </Setting>
+    <Setting Name="Root_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.103.101</Value>
+    </Setting>
+    <Setting Name="Root_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10001</Value>
+    </Setting>
+    <Setting Name="ConnectToRoot" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Sub_HWM" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="Pub_HWM" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DDS</Value>
+    </Setting>
+    <Setting Name="Root_HWM" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="LogFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DDS.txt</Value>
+    </Setting>
+    <Setting Name="Router_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">*</Value>
+    </Setting>
+    <Setting Name="Router_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10002</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
