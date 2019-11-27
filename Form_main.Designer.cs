@@ -1,4 +1,4 @@
-﻿namespace Arrow
+﻿namespace Sword
 {
     partial class Form_main
     {

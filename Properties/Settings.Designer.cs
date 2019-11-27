@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sword.DDS.Properties {
+namespace Sword.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

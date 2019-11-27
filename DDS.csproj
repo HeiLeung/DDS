@@ -7,7 +7,7 @@
     <ProjectGuid>{5456CF9F-F070-4EB2-983B-3177A35EC646}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sword.DDS</RootNamespace>
+    <RootNamespace>Sword</RootNamespace>
     <AssemblyName>DDS</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -50,17 +50,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Arrow.Program</StartupObject>
+    <StartupObject>Sword.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>DDS.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ArrowBaseLib">
-      <HintPath>..\ArrowBaseLibrary\bin\Debug\ArrowBaseLib.dll</HintPath>
-    </Reference>
     <Reference Include="AsyncIO, Version=0.1.69.0, Culture=neutral, PublicKeyToken=44a94435bd6f33f8, processorArchitecture=MSIL">
       <HintPath>packages\AsyncIO.0.1.69\lib\net40\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseLibrary">
+      <HintPath>..\Base Library\bin\Release\BaseLibrary.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ, Version=4.0.0.207, Culture=neutral, PublicKeyToken=a6decef4ddc58b3a, processorArchitecture=MSIL">
       <HintPath>packages\NetMQ.4.0.0.207\lib\net40\NetMQ.dll</HintPath>
@@ -132,8 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DDS.ico" />
-    <Content Include="DDS2.ico" />
-    <Content Include="Release notes.txt">
+    <Content Include="ReleaseNotes.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

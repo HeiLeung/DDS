@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using NetMQ;
-using Arrow.Library;
+using Sword.Library;
 
-namespace Arrow
+namespace Sword
 {
     public class DDS
     {        
@@ -36,7 +36,7 @@ namespace Arrow
         public DDS()
         {
             // initialise log, and LVC 
-            _logger = new Arrow.Library.ThreadedLogger(Properties.Settings.Default.LogFileName, true, true, "C:\\Arrow\\Log\\");
+            _logger = new Sword.Library.ThreadedLogger(Properties.Settings.Default.LogFileName, true, true, "C:\\Sword\\Log\\");
             _lvc = new Dictionary<string, Dictionary<string, string>>();
 
             _logger.Log("=======================");

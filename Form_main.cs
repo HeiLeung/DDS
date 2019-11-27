@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Arrow
+namespace Sword
 {
     public partial class Form_main : Form
     {        
