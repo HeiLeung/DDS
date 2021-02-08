@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Data;
-using System.Threading.Tasks;
 
-namespace Sword
+namespace Arrow
 {
     public static class Utilites
     {
@@ -313,6 +309,98 @@ namespace Sword
         }
 
         /// <summary>
+        /// Convert EBS DDS message (byte[]) to Dictioanry<int, byte[]>
+        /// </summary>
+        /// <param name="messageReceived"></param>
+        /// <returns>Dictioanry<int, byte[]></returns>
+        public static Dictionary<int, byte[]> ConvertToDictionary(byte[] messageReceived)
+        {
+            ReadOnlySpan<byte> msgRx = messageReceived;
+            bool isTagFound = false;
+            int itemStartIdx = 0;
+            int tag = 0;
+            byte[] value;
+            Dictionary<int, byte[]> dict = new Dictionary<int, byte[]>();
+
+            for (int i = 0; i < msgRx.Length; i++)
+            {
+                //if (msgRx[i] == byteCode_VB)
+                if (msgRx[i] == '|')
+                {
+                    if (!isTagFound)
+                    {
+                        //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
+                        tag = GetIntFromAsciiEncodedString(msgRx[itemStartIdx..i].ToArray());
+
+                        isTagFound = true;
+                    }
+                    else
+                    {
+                        //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
+                        value = msgRx[itemStartIdx..i].ToArray();
+
+                        // add to dictionary with the previous tag found
+                        dict.Add(tag, value);
+
+                        isTagFound = false;
+                    }
+                    itemStartIdx = i + 1;
+                }
+            }
+
+            return dict;
+        }
+
+        /// <summary>
+        /// This is a special deserialisation. Remove double-byte character set (DBCS) from the message.
+        /// DBSC is used in EBS for the traditional and simplified chiness characters.
+        /// The return dictionary will remove the tag 36 and 505, that is the tag for trad. chinese and simp. chinese stock name.
+        /// </summary>
+        /// <param name="messageReceived">byte[] message</param>
+        /// <returns>Dictionary of integer as key, ASCII only value</returns>
+        public static Dictionary<int, byte[]> DeseriailseAsciiOnly(byte[] messageReceived)
+        {
+            ReadOnlySpan<byte> msgRx = messageReceived;
+            bool isTagFound = false;
+            int itemStartIdx = 0;
+            int tag = 0;
+            byte[] value;
+            Dictionary<int, byte[]> dict = new Dictionary<int, byte[]>();
+
+            for (int i = 0; i < msgRx.Length; i++)
+            {
+                //if (msgRx[i] == byteCode_VB)
+                if (msgRx[i] == '|')
+                {
+                    if (!isTagFound)
+                    {
+                        //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
+                        tag = GetIntFromAsciiEncodedString(msgRx[itemStartIdx..i].ToArray());
+
+                        isTagFound = true;
+                    }
+                    else if (msgRx[i-1] < 127)  //  it is NOT a double-byte character set (DBCS)
+                    {
+
+                        //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
+                        value = msgRx[itemStartIdx..i].ToArray();
+
+                        // add to dictionary with the previous tag found
+                        dict.Add(tag, value);
+
+                        isTagFound = false;
+                    }
+                    itemStartIdx = i + 1;
+                }
+            }
+
+            dict.Remove(36);
+            dict.Remove(505);
+
+            return dict;
+        }
+
+        /// <summary>
         /// Static method for checking if aphpanumeric is present in the message
         /// </summary>
         /// <param name="message">the string to be check</param>
@@ -322,6 +410,23 @@ namespace Sword
             string msg = message;
 
             return Regex.IsMatch(msg, @"^[a-zA-Z0-9_\r]+$", RegexOptions.Compiled);
+        }
+
+        /// <summary>
+        /// Get int from an ascii encoded byte[]
+        /// </summary>
+        /// <param name="asciiEncoded"></param>
+        /// <returns>int</returns>
+        public static int GetIntFromAsciiEncodedString(byte[] asciiEncoded)
+        {
+            int result = 0;
+
+            for (int i = 0; i < asciiEncoded.Length; i++)
+            {
+                result = (10 * result) + (asciiEncoded[i] - '0');           // char '0' = (int)48 
+            }
+
+            return result;
         }
     }
 }

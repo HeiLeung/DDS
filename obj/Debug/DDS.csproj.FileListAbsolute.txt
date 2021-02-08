@@ -1,0 +1,5 @@
+C:\Users\doom_\Documents\Repository\DDS\obj\Debug\DDS.csprojAssemblyReference.cache
+C:\Users\doom_\Documents\Repository\DDS\obj\Debug\Sword.Form_main.resources
+C:\Users\doom_\Documents\Repository\DDS\obj\Debug\Sword.Properties.Resources.resources
+C:\Users\doom_\Documents\Repository\DDS\obj\Debug\DDS.csproj.GenerateResource.cache
+C:\Users\doom_\Documents\Repository\DDS\obj\Debug\DDS.csproj.CoreCompileInputs.cache

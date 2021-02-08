@@ -1,0 +1,40 @@
+{
+  "DDS": {
+    "ConnectToRoot": false,
+    "Pub": {
+      "IP": "*",
+      "Port": 10001,
+      "HWM": 500
+    },
+    "Sub": {
+      "IP": "*",
+      "Port": 11001,
+      "HWM": 500
+    },
+    "Router": {
+      "IP": "*",
+      "Port": 11002,
+      "HWM": 500
+    },
+    "Root": {
+      "IP": "*",
+      "Port": 10002,
+      "HWM": 500
+    }
+  },
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+    "MinimumLevel": "Debug",
+    "WriteTo": [
+      { "Name": "Console" },
+      {
+        "Name": "File",
+        "Args": { "path": "./zmqdds.log" }
+      }
+    ],
+    "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
+    "Properties": {
+      "Application": "zmqdds"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\.net5.0\publish\DDS.pdb
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\.net5.0\publish\ReleaseNotes.txt
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\.net5.0\publish\config.json
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\.net5.0\publish\DDS
