@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Text.RegularExpressions;
+using Serilog;
 
 namespace Arrow
 {
@@ -309,55 +310,71 @@ namespace Arrow
         }
 
         /// <summary>
-        /// Convert EBS DDS message (byte[]) to Dictioanry<int, byte[]>
+        /// Convert EBS DDS message (byte[]) to Dictionary<int, byte[]>
         /// </summary>
         /// <param name="messageReceived"></param>
-        /// <returns>Dictioanry<int, byte[]></returns>
+        /// <returns>Dictionary<int, byte[]></returns>
         public static Dictionary<int, byte[]> ConvertToDictionary(byte[] messageReceived)
         {
             ReadOnlySpan<byte> msgRx = messageReceived;
             bool isTagFound = false;
             int itemStartIdx = 0;
             int tag = 0;
-            byte[] value;
+            byte[] value = null;
             Dictionary<int, byte[]> dict = new Dictionary<int, byte[]>();
 
             for (int i = 0; i < msgRx.Length; i++)
             {
-                //if (msgRx[i] == byteCode_VB)
-                if (msgRx[i] == '|')
+                try
                 {
-                    if (!isTagFound)
+                    //if (msgRx[i] == byteCode_VB)
+                    if (msgRx[i] == '|')
                     {
-                        //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
-                        tag = GetIntFromAsciiEncodedString(msgRx[itemStartIdx..i].ToArray());
+                        if (!isTagFound)
+                        {
+                            //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
+                            tag = GetIntFromAsciiEncodedText(msgRx[itemStartIdx..i].ToArray());
 
-                        isTagFound = true;
+                            isTagFound = true;
+                        }
+                        else
+                        {
+                            //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
+                            value = msgRx[itemStartIdx..i].ToArray();
+
+                            // add to dictionary with the previous tag found
+                            dict.Add(tag, value);
+
+                            isTagFound = false;
+                        }
+                        itemStartIdx = i + 1;
                     }
-                    else
-                    {
-                        //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
-                        value = msgRx[itemStartIdx..i].ToArray();
-
-                        // add to dictionary with the previous tag found
-                        dict.Add(tag, value);
-
-                        isTagFound = false;
-                    }
-                    itemStartIdx = i + 1;
                 }
+                catch (Exception ex)
+                {                                        
+                    Log.Error("Utilities ::: Error in ConvertToDictionary");
+                    Log.Error("Utilities ::: " + ex.ToString());
+                    Log.Error("Utilities ::: topic : {0}   message : {1}", tag, System.Text.Encoding.ASCII.GetString(value));
+                    
+                    return dict;
+                }                
             }
 
             return dict;
         }
 
-        /// <summary>
+        /// <summary>        
         /// This is a special deserialisation. Remove double-byte character set (DBCS) from the message.
-        /// DBSC is used in EBS for the traditional and simplified chiness characters.
-        /// The return dictionary will remove the tag 36 and 505, that is the tag for trad. chinese and simp. chinese stock name.
+        /// DBCS is used in EBS for the traditional and simplified chiness characters.
+        /// The return dictionary will remove the tag 36 and 505, that are the tag for trad. chinese and simp. chinese stock name.
+        /// DBCS, the first byte of DBCS must be greater than 127, while the delimiter '|' is 124
+        /// Some DBCS Chinese charaters might have the second byte = 124, result as incorrect deserialisation.
+        /// To encounter the problem, We check the previous character if the delimiter is found.
+        /// if the previous character is greater than 127, then we confirm it is the second byte of a DBCS characters, but not a valid delimiter
         /// </summary>
         /// <param name="messageReceived">byte[] message</param>
         /// <returns>Dictionary of integer as key, ASCII only value</returns>
+        [Obsolete("DeseriailseAsciiOnly is deprecated, wrong implementation", true)]
         public static Dictionary<int, byte[]> DeseriailseAsciiOnly(byte[] messageReceived)
         {
             ReadOnlySpan<byte> msgRx = messageReceived;
@@ -369,31 +386,37 @@ namespace Arrow
 
             for (int i = 0; i < msgRx.Length; i++)
             {
-                //if (msgRx[i] == byteCode_VB)
-                if (msgRx[i] == '|')
+                try
                 {
-                    if (!isTagFound)
+                    if (msgRx[i] == '|' && msgRx[i - 1] < 127) //DBCS, the first byte must be larger than 127
                     {
-                        //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
-                        tag = GetIntFromAsciiEncodedString(msgRx[itemStartIdx..i].ToArray());
+                        if (!isTagFound)
+                        {
+                            //tag = GetIntFromAsciiEncoded(msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray());
+                            tag = GetIntFromAsciiEncodedText(msgRx[itemStartIdx..i].ToArray());
 
-                        isTagFound = true;
+                            isTagFound = true;
+                        }
+                        else
+                        {
+                            //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
+                            value = msgRx[itemStartIdx..i].ToArray();
+
+                            // add to dictionary with the previous tag found
+                            dict.Add(tag, value);
+
+                            isTagFound = false;
+                        }
+                        itemStartIdx = i + 1;
                     }
-                    else if (msgRx[i-1] < 127)  //  it is NOT a double-byte character set (DBCS)
-                    {
-
-                        //value = msgRx.Slice(itemStartIdx, i - itemStartIdx).ToArray();
-                        value = msgRx[itemStartIdx..i].ToArray();
-
-                        // add to dictionary with the previous tag found
-                        dict.Add(tag, value);
-
-                        isTagFound = false;
-                    }
-                    itemStartIdx = i + 1;
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex.ToString());
                 }
             }
 
+            // remove the trad. and simp. Chinese tag value pairs
             dict.Remove(36);
             dict.Remove(505);
 
@@ -415,18 +438,57 @@ namespace Arrow
         /// <summary>
         /// Get int from an ascii encoded byte[]
         /// </summary>
-        /// <param name="asciiEncoded"></param>
+        /// <param name="asciiEncodedText"></param>
         /// <returns>int</returns>
-        public static int GetIntFromAsciiEncodedString(byte[] asciiEncoded)
+        public static int GetIntFromAsciiEncodedText(byte[] asciiEncodedText)
         {
             int result = 0;
 
-            for (int i = 0; i < asciiEncoded.Length; i++)
+            for (int i = 0; i < asciiEncodedText.Length; i++)
             {
-                result = (10 * result) + (asciiEncoded[i] - '0');           // char '0' = (int)48 
+                result = (10 * result) + (asciiEncodedText[i] - '0');           // char '0' = (int)48 
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Serialise tag value pair into arrow message format
+        /// </summary>
+        /// <param name="Dict">DDS message Dictionary<int, byte[]></param>
+        /// <param name="topic">Topic</param>
+        /// <returns>(byte[]) arrow message format</returns>
+        public static byte[] Serialise(Dictionary<int, byte[]> dict)
+        {
+            List<byte> byteList = new List<byte>();
+
+            foreach (var kvp in dict)
+            {
+                byteList.AddRange(System.Text.Encoding.ASCII.GetBytes(kvp.Key.ToString() + '|'));
+                byteList.AddRange(kvp.Value);
+                byteList.Add((byte)'|');
+            }
+            byteList.TrimExcess();
+            return byteList.ToArray();
+        }
+
+        /// <summary>
+        /// Serialise only one tag value pair into arrow message format
+        /// </summary>
+        /// <param name="tag"></param>
+        /// <param name="value"></param>
+        /// <returns>(byte[])arrow message format</returns>
+        public static byte[] Serialise(int tag, byte[] value)
+        {
+            List<byte> byteList = new List<byte>();
+
+            byteList.AddRange(System.Text.Encoding.ASCII.GetBytes(tag.ToString() + '|'));
+            byteList.AddRange(value);
+            byteList.Add((byte)'|');
+
+            byteList.TrimExcess();
+
+            return byteList.ToArray();
         }
     }
 }

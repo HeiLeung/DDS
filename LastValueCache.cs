@@ -29,6 +29,7 @@ namespace Arrow
             try
             {
                 Dictionary<int, byte[]> DDSMsgDict = Utilites.ConvertToDictionary(message);
+                //Dictionary<int, byte[]> DDSMsgDict = Utilites.DeseriailseAsciiOnly(message);
 
                 // check if the topic is already existed
                 if (_lvc.TryGetValue(topic, out Dictionary<int, byte[]> LVCDict))
@@ -56,8 +57,8 @@ namespace Arrow
         /// Get last value cache of given topic
         /// </summary>
         /// <param name="topic"></param>
-        /// <returns>value in terms of serilaise byte[]</returns>
-        public KeyValuePair<string, byte[]>[] Get(string topic)
+        /// <returns>value in terms of serialise byte[]</returns>
+        public KeyValuePair<string, byte[]>[] TryGet(string topic)
         {            
             if (topic.EndsWith("."))
             {                
@@ -65,14 +66,14 @@ namespace Arrow
 
                 if (topicList.Length >= 1)
                 {
-                    KeyValuePair<string, byte[]>[] messages = new KeyValuePair<string, byte[]>[topicList.Length];
+                    KeyValuePair<string, byte[]>[] kvp = new KeyValuePair<string, byte[]>[topicList.Length];
 
                     for (int i = 0; i < topicList.Length; i++)
                     {
-                        messages[i] = new KeyValuePair<string, byte[]>(topicList[i], Serialise(_lvc[topicList[i]]));
+                        kvp[i] = new KeyValuePair<string, byte[]>(topicList[i], Utilites.Serialise(_lvc[topicList[i]]));
                     }
 
-                    return messages;
+                    return kvp;
                 }                
             }
             else
@@ -81,7 +82,7 @@ namespace Arrow
                 {
                     KeyValuePair<string, byte[]>[] messages = new KeyValuePair<string, byte[]>[1];
 
-                    messages[0] = new KeyValuePair<string, byte[]>(topic, Serialise(_lvc[topic]));
+                    messages[0] = new KeyValuePair<string, byte[]>(topic, Utilites.Serialise(_lvc[topic]));
 
                     return messages;
                 }               
@@ -89,45 +90,26 @@ namespace Arrow
 
             return null;
         }
-        
-        /// <summary>
-        /// Return serialise byte[]
-        /// </summary>
-        /// <param name="Dict">DDS message Dictionary<int, byte[]></param>
-        /// <param name="topic">Topic</param>
-        /// <returns>serialise byte[]</returns>
-        private byte[] Serialise(Dictionary<int, byte[]> dict)
-        {
-            List<byte> byteList = new List<byte>(8192);
-            
-            foreach (var kvp in dict)
-            {
-                byteList.AddRange(System.Text.Encoding.ASCII.GetBytes(kvp.Key.ToString() + '|'));
-                byteList.AddRange(kvp.Value);
-                byteList.Add((byte)'|');
-            }
-            byteList.TrimExcess();
-            return byteList.ToArray();
-        }
 
         /// <summary>
-        /// Return serialise byte[]
+        /// Get last value cache of given topic and tag
         /// </summary>
-        /// <param name="Dict">DDS message Dictionary<int, byte[]></param>
-        /// <param name="topic">Topic</param>
-        /// <returns>serialise byte[]</returns>
-        public byte[] Serialise(string topic, KeyValuePair<int, byte[]>[] keyValuePairs)
+        /// <param name="topic">topic</param>
+        /// <param name="tag">tag</param>
+        /// <returns>byte[] (value)</returns>
+        public byte[] TryGet(string topic, int tag)
         {
-            List<byte> byteList = new List<byte>(128);
-            
-            for (int i =0; i < keyValuePairs.Length; i++)
+            if (_lvc.TryGetValue(topic, out Dictionary<int, byte[]> value))
             {
-                byteList.AddRange(System.Text.Encoding.ASCII.GetBytes(keyValuePairs[i].Key.ToString() + '|'));
-                byteList.AddRange(keyValuePairs[i].Value);
-                byteList.Add((byte)'|');
+                if (value.ContainsKey(tag))
+                {
+                    return Utilites.Serialise(tag, value[tag]);
+                }
+
+                return null;
             }
-            byteList.TrimExcess();
-            return byteList.ToArray();
-        }
+
+            return null;
+        }        
     }
 }

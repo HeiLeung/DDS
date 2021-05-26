@@ -1,0 +1,815 @@
+2021-04-08 12:43:39.375 +08:00 [INF] =======================
+2021-04-08 12:43:39.406 +08:00 [INF] === DDS initialised ===
+2021-04-08 12:43:39.407 +08:00 [INF] =======================
+2021-04-09 15:26:41.225 +08:00 [INF] =======================
+2021-04-09 15:26:41.313 +08:00 [INF] === DDS initialised ===
+2021-04-09 15:26:41.318 +08:00 [INF] =======================
+2021-04-09 15:35:53.627 +08:00 [INF] =======================
+2021-04-09 15:35:53.722 +08:00 [INF] === DDS initialised ===
+2021-04-09 15:35:53.731 +08:00 [INF] =======================
+2021-04-12 13:28:32.011 +08:00 [INF] =======================
+2021-04-12 13:28:32.053 +08:00 [INF] === DDS initialised ===
+2021-04-12 13:28:32.055 +08:00 [INF] =======================
+2021-04-13 10:35:19.785 +08:00 [INF] =======================
+2021-04-13 10:35:19.812 +08:00 [INF] === DDS initialised ===
+2021-04-13 10:35:19.813 +08:00 [INF] =======================
+2021-04-13 14:55:04.858 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:55:04.907 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:55:04.911 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000051   message : update|Trade.KGI.20210413-000051-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:55:04 pm|35|ExecutionReport|58|Testing|11|20210413-000051|37|5_5862146|198|HK20210413AAAAAAAAv+|31|49|14|400|17|HK20210413AAAAAAAAv+|31|49|54|1|109|***|55|5|
+2021-04-13 14:55:04.913 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:55:04.914 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:55:04.915 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000052   message : update|Trade.KGI.20210413-000052-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:55:04 pm|35|ExecutionReport|58|Testing|11|20210413-000052|37|5_5862402|198|HK20210413AAAAAAAAv/|31|49|14|400|17|HK20210413AAAAAAAAv/|31|49|54|2|109|***|55|5|
+2021-04-13 14:56:18.299 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:18.301 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:18.302 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000053   message : update|Trade.KGI.20210413-000053-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:18 pm|35|ExecutionReport|58|Testing|11|20210413-000053|37|5_5862914|198|HK20210413AAAAAAAAwF|31|49|14|800|17|HK20210413AAAAAAAAwF|31|49|54|1|109|***|55|5|
+2021-04-13 14:56:18.307 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:18.309 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:18.312 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000054   message : update|Trade.KGI.20210413-000054-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:18 pm|35|ExecutionReport|58|Testing|11|20210413-000054|37|5_5863170|198|HK20210413AAAAAAAAwG|31|49|14|800|17|HK20210413AAAAAAAAwG|31|49|54|2|109|***|55|5|
+2021-04-13 14:56:22.918 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:22.919 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:22.922 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000053   message : update|Trade.KGI.20210413-000053-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:22 pm|35|ExecutionReport|58|Testing|11|20210413-000053|37|5_5862914|198|HK20210413AAAAAAAAwI|31|49|14|1200|17|HK20210413AAAAAAAAwI|31|49|54|1|109|***|55|5|
+2021-04-13 14:56:22.925 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:22.927 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:22.930 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000055   message : update|Trade.KGI.20210413-000055-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:22 pm|35|ExecutionReport|58|Testing|11|20210413-000055|37|5_5863426|198|HK20210413AAAAAAAAwJ|31|49|14|400|17|HK20210413AAAAAAAAwJ|31|49|54|2|109|***|55|5|
+2021-04-13 14:56:25.334 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:25.336 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:25.341 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000053   message : update|Trade.KGI.20210413-000053-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:25 pm|35|ExecutionReport|58|Testing|11|20210413-000053|37|5_5862914|198|HK20210413AAAAAAAAwL|31|49|14|1600|17|HK20210413AAAAAAAAwL|31|49|54|1|109|***|55|5|
+2021-04-13 14:56:25.344 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:25.345 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:25.348 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000056   message : update|Trade.KGI.20210413-000056-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:25 pm|35|ExecutionReport|58|Testing|11|20210413-000056|37|5_5863682|198|HK20210413AAAAAAAAwM|31|49|14|400|17|HK20210413AAAAAAAAwM|31|49|54|2|109|***|55|5|
+2021-04-13 14:56:26.559 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:26.560 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:26.564 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000053   message : update|Trade.KGI.20210413-000053-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:26 pm|35|ExecutionReport|58|Testing|11|20210413-000053|37|5_5862914|198|HK20210413AAAAAAAAwO|31|49|14|2000|17|HK20210413AAAAAAAAwO|31|49|54|1|109|***|55|5|
+2021-04-13 14:56:26.566 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 14:56:26.567 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 14:56:26.571 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000057   message : update|Trade.KGI.20210413-000057-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 2:56:26 pm|35|ExecutionReport|58|Testing|11|20210413-000057|37|5_5863938|198|HK20210413AAAAAAAAwP|31|49|14|400|17|HK20210413AAAAAAAAwP|31|49|54|2|109|***|55|5|
+2021-04-13 15:14:49.680 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-13 15:14:49.682 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-13 15:14:49.685 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210413-000058   message : update|Trade.KGI.20210413-000058-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|13/4/2021 3:14:49 pm|35|ExecutionReport|58|Testing|11|20210413-000058|37|5_5869058|198|HK20210413AAAAAAAAw0|31|49|14|400|17|HK20210413AAAAAAAAw0|31|49|54|2|109|***|55|5|
+2021-04-14 10:34:17.369 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 10:34:17.373 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 10:34:17.379 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000001   message : update|Trade.KGI.20210414-000001-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 10:34:17 am|35|ExecutionReport|58|Testing|11|20210414-000001|37|3988_1295618|198|HK20210414AAAAAAAAw7|31|3|14|1000|17|HK20210414AAAAAAAAw7|31|3|54|1|109|***|55|3988|
+2021-04-14 10:34:17.382 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 10:34:17.383 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 10:34:17.387 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000002   message : update|Trade.KGI.20210414-000002-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 10:34:17 am|35|ExecutionReport|58|Testing|11|20210414-000002|37|3988_1432066|198|HK20210414AAAAAAAAw8|31|3|14|1000|17|HK20210414AAAAAAAAw8|31|3|54|2|109|***|55|3988|
+2021-04-14 13:02:58.970 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:02:58.973 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:02:58.977 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000009   message : update|Trade.KGI.20210414-000009-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:02:58 pm|35|ExecutionReport|58|Testing|11|20210414-000009|37|EDMA_6GdnWOi-00|198|HK20210414AAAAAAAAxL|31|3.06|14|1000|17|HK20210414AAAAAAAAxL|31|3.06|54|1|109|***|55|3988|
+2021-04-14 13:02:58.994 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:02:59.012 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:02:59.021 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000010   message : update|Trade.KGI.20210414-000010-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:02:58 pm|35|ExecutionReport|58|Testing|11|20210414-000010|37|3988_3910914|198|HK20210414AAAAAAAAxM|31|3.06|14|1000|17|HK20210414AAAAAAAAxM|31|3.06|54|2|109|***|55|3988|
+2021-04-14 13:07:59.424 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:07:59.433 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:07:59.442 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000013   message : update|Trade.KGI.20210414-000013-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:07:59 pm|35|ExecutionReport|58|Testing|11|20210414-000013|37|3988_4024066|198|HK20210414AAAAAAAAxP|31|3.08|14|1000|17|HK20210414AAAAAAAAxP|31|3.08|54|1|109|***|55|3988|
+2021-04-14 13:07:59.453 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:07:59.463 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:07:59.486 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000014   message : update|Trade.KGI.20210414-000014-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:07:59 pm|35|ExecutionReport|58|Testing|11|20210414-000014|37|3988_4027650|198|HK20210414AAAAAAAAxQ|31|3.08|14|1000|17|HK20210414AAAAAAAAxQ|31|3.08|54|2|109|***|55|3988|
+2021-04-14 13:46:56.804 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:46:56.806 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:46:56.809 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000019   message : update|Trade.KGI.20210414-000019-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:46:56 pm|35|ExecutionReport|58|Testing|11|20210414-000019|37|3988_4914946|198|HK20210414AAAAAAAAxd|31|3.08|14|1000|17|HK20210414AAAAAAAAxd|31|3.08|54|2|109|***|55|3988|
+2021-04-14 13:49:29.434 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-14 13:49:29.437 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-14 13:49:29.441 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210414-000020   message : update|Trade.KGI.20210414-000020-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|14/4/2021 1:49:29 pm|35|ExecutionReport|58|Testing|11|20210414-000020|37|3988_4971266|198|HK20210414AAAAAAAAxh|31|3.08|14|2000|17|HK20210414AAAAAAAAxh|31|3.08|54|2|109|***|55|3988|
+2021-04-15 09:47:17.806 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 09:47:17.812 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 09:47:17.813 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000001   message : update|ExiOrder.KGI.20210415-000001-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 9:47:17 am|35|ExecutionReport|58|Testing|11|20210415-000001|37|NONE|198|HK20210415AAAAAAAAx3|31|0|14|0|17|HK20210415AAAAAAAAx3|31|0|54|1|109|FIX_USR|55|3988|39|REJECTED|
+2021-04-15 09:54:53.349 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 09:54:53.351 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 09:54:53.354 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000002   message : update|ExiOrder.KGI.20210415-000002-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 9:54:53 am|35|ExecutionReport|58|Testing|11|20210415-000002|37|NONE|198|HK20210415AAAAAAAAx4|31|0|14|0|17|HK20210415AAAAAAAAx4|31|0|54|1|109|FIX_USR|55|3988|39|REJECTED|
+2021-04-15 09:59:38.113 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 09:59:38.114 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 09:59:38.119 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000003   message : update|ExiOrder.KGI.20210415-000003-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 9:59:38 am|35|ExecutionReport|58|Testing|11|20210415-000003|37|NONE|198|HK20210415AAAAAAAAx5|31|0|14|0|17|HK20210415AAAAAAAAx5|31|0|54|1|109|FIX_USR|55|3988|39|-1|
+2021-04-15 10:06:26.917 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:06:26.919 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:06:26.926 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:06:26 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_80129|198|HK20210415AAAAAAAAx6|31|0|14|0|17|HK20210415AAAAAAAAx6|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:10:03.130 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:10:03.133 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:10:03.136 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000006   message : update|ExiOrder.KGI.20210415-000006-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:10:03 am|35|ExecutionReport|58|Testing|11|20210415-000006|37|3988_85761|198|HK20210415AAAAAAAAx7|31|0|14|0|17|HK20210415AAAAAAAAx7|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:10:03.139 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:10:03.140 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:10:03.142 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:10:03 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_80129|198|HK20210414AAAAAAAAw7|31|3.09|14|1000|17|HK20210414AAAAAAAAw7|31|3.09|54|1|109|FIX_USR|55|3988|39|6|
+2021-04-15 10:10:03.144 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:10:03.145 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:10:03.149 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000005   message : update|Trade.KGI.20210415-000005-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:10:03 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_80129|198|HK20210414AAAAAAAAw7|31|3.09|14|1000|17|HK20210414AAAAAAAAw7|31|3.09|54|1|109|***|55|3988|
+2021-04-15 10:10:03.165 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:10:03.166 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:10:03.168 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000006   message : update|ExiOrder.KGI.20210415-000006-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:10:03 am|35|ExecutionReport|58|Testing|11|20210415-000006|37|3988_85761|198|HK20210414AAAAAAAAw8|31|3.09|14|1000|17|HK20210414AAAAAAAAw8|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 10:10:03.171 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:10:03.175 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:10:03.180 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000006   message : update|Trade.KGI.20210415-000006-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:10:03 am|35|ExecutionReport|58|Testing|11|20210415-000006|37|3988_85761|198|HK20210414AAAAAAAAw8|31|3.09|14|1000|17|HK20210414AAAAAAAAw8|31|3.09|54|2|109|***|55|3988|
+2021-04-15 10:13:03.704 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:13:03.705 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:13:03.708 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:13:03 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_80129|198|HK20210415AAAAAAAAx8|31|0|14|1000|17|HK20210415AAAAAAAAx8|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:13:03.710 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:13:03.711 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:13:03.713 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:13:03 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_91393|198|HK20210415AAAAAAAAx9|31|0|14|1000|17|HK20210415AAAAAAAAx9|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:13:34.487 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:13:34.488 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:13:34.492 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:13:34 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_91393|198|HK20210415AAAAAAAAx+|31|0|14|1000|17|HK20210415AAAAAAAAx+|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:13:34.494 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:13:34.495 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:13:34.498 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000005   message : update|ExiOrder.KGI.20210415-000005-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:13:34 am|35|ExecutionReport|58|Testing|11|20210415-000005|37|3988_91393|198|HK20210415AAAAAAAAx/|31|0|14|1000|17|HK20210415AAAAAAAAx/|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 10:25:34.168 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:25:34.169 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:25:34.171 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000007   message : update|ExiOrder.KGI.20210415-000007-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:25:34 am|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210415AAAAAAAAyA|31|0|14|0|17|HK20210415AAAAAAAAyA|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 10:26:48.100 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 10:26:48.101 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 10:26:48.105 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000007   message : update|ExiOrder.KGI.20210415-000007-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 10:26:48 am|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210415AAAAAAAAyB|31|0|14|0|17|HK20210415AAAAAAAAyB|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:20:02.617 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:20:02.621 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:20:02.623 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000008   message : update|ExiOrder.KGI.20210415-000008-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:20:02 am|35|ExecutionReport|58|Testing|11|20210415-000008|37|3988_434433|198|HK20210415AAAAAAAAyC|31|0|14|0|17|HK20210415AAAAAAAAyC|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:21:03.444 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:21:03.445 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:21:03.450 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000008   message : update|ExiOrder.KGI.20210415-000008-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:21:03 am|35|ExecutionReport|58|Testing|11|20210415-000008|37|3988_434433|198|HK20210415AAAAAAAAyD|31|0|14|0|17|HK20210415AAAAAAAAyD|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:24:01.481 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:24:01.483 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:24:01.485 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000009   message : update|ExiOrder.KGI.20210415-000009-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:24:01 am|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_450817|198|HK20210415AAAAAAAAyE|31|0|14|0|17|HK20210415AAAAAAAAyE|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:24:10.709 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:24:10.711 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:24:10.714 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000009   message : update|ExiOrder.KGI.20210415-000009-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:24:10 am|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_450817|198|HK20210415AAAAAAAAyF|31|0|14|0|17|HK20210415AAAAAAAAyF|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:24:17.480 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:24:17.481 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:24:17.483 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000009   message : update|ExiOrder.KGI.20210415-000009-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:24:17 am|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_450817|198|HK20210415AAAAAAAAyG|31|0|14|0|17|HK20210415AAAAAAAAyG|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:24:17.489 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:24:17.489 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:24:17.491 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000009   message : update|ExiOrder.KGI.20210415-000009-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:24:17 am|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_452097|198|HK20210415AAAAAAAAyH|31|0|14|0|17|HK20210415AAAAAAAAyH|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:27:43.049 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:27:43.050 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:27:43.055 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:27:43 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_463617|198|HK20210415AAAAAAAAyI|31|0|14|0|17|HK20210415AAAAAAAAyI|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:27:53.216 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:27:53.218 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:27:53.221 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:27:53 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_463617|198|HK20210415AAAAAAAAyJ|31|0|14|0|17|HK20210415AAAAAAAAyJ|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:27:55.911 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:27:55.915 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:27:55.917 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:27:55 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_463617|198|HK20210415AAAAAAAAyK|31|0|14|0|17|HK20210415AAAAAAAAyK|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:27:59.530 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:27:59.531 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:27:59.532 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:27:59 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_463617|198|HK20210415AAAAAAAAyL|31|0|14|0|17|HK20210415AAAAAAAAyL|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:27:59.547 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:27:59.549 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:27:59.551 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:27:59 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_467201|198|HK20210415AAAAAAAAyM|31|0|14|0|17|HK20210415AAAAAAAAyM|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:28:40.067 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:28:40.068 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:28:40.069 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-005|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:28:40 am|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_463617|198|HK20210415AAAAAAAAyN|31|0|14|0|17|HK20210415AAAAAAAAyN|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:31:38.207 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:31:38.209 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:31:38.213 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:31:38 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyO|31|0|14|0|17|HK20210415AAAAAAAAyO|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:31:57.165 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:31:57.167 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:31:57.170 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:31:57 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyP|31|0|14|0|17|HK20210415AAAAAAAAyP|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:31:57.172 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:31:57.172 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:31:57.173 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:31:57 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyQ|31|0|14|0|17|HK20210415AAAAAAAAyQ|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 11:31:58.116 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:31:58.118 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:31:58.120 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:31:58 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyR|31|0|14|0|17|HK20210415AAAAAAAAyR|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:31:58.686 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:31:58.689 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:31:58.691 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:31:58 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyS|31|0|14|0|17|HK20210415AAAAAAAAyS|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:01.621 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:01.621 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:01.624 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000011   message : update|ExiOrder.KGI.20210415-000011-005|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:01 am|35|ExecutionReport|58|Testing|11|20210415-000011|37|3988_482049|198|HK20210415AAAAAAAAyT|31|0|14|0|17|HK20210415AAAAAAAAyT|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:32.668 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:32.669 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:32.673 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:32 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyU|31|0|14|0|17|HK20210415AAAAAAAAyU|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:41.946 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:41.947 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:41.950 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:41 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyV|31|0|14|0|17|HK20210415AAAAAAAAyV|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:42.221 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:42.223 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:42.225 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:42 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyW|31|0|14|0|17|HK20210415AAAAAAAAyW|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:42.561 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:42.563 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:42.569 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:42 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyX|31|0|14|0|17|HK20210415AAAAAAAAyX|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:42.955 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:42.957 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:42.959 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-005|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:42 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyY|31|0|14|0|17|HK20210415AAAAAAAAyY|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:47.321 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:47.322 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:47.324 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-006|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:47 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484353|198|HK20210415AAAAAAAAyZ|31|0|14|0|17|HK20210415AAAAAAAAyZ|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:47.328 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:47.329 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:47.332 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-006|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:47 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484865|198|HK20210415AAAAAAAAya|31|0|14|0|17|HK20210415AAAAAAAAya|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:50.737 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:50.738 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:50.739 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-007|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:50 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484865|198|HK20210415AAAAAAAAyb|31|0|14|0|17|HK20210415AAAAAAAAyb|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 11:32:50.742 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:32:50.743 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:32:50.743 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000012   message : update|ExiOrder.KGI.20210415-000012-007|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:32:50 am|35|ExecutionReport|58|Testing|11|20210415-000012|37|3988_484865|198|HK20210415AAAAAAAAyc|31|0|14|0|17|HK20210415AAAAAAAAyc|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 11:43:40.661 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:43:40.664 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:43:40.666 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000007   message : update|ExiOrder.KGI.20210415-000007-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:43:40 am|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210415AAAAAAAAyd|31|3.09|14|1000|17|HK20210415AAAAAAAAyd|31|3.09|54|1|109|FIX_USR|55|3988|39|6|
+2021-04-15 11:43:40.667 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 11:43:40.668 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 11:43:40.670 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000007   message : update|Trade.KGI.20210415-000007-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 11:43:40 am|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210415AAAAAAAAyd|31|3.09|14|1000|17|HK20210415AAAAAAAAyd|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:33:46.441 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:33:46.443 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:33:46.446 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000013   message : update|ExiOrder.KGI.20210415-000013-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:33:46 pm|35|ExecutionReport|58|Testing|11|20210415-000013|37|3988_902401|198|HK20210415AAAAAAAAym|31|0|14|0|17|HK20210415AAAAAAAAym|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:34:40.369 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:34:40.371 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:34:40.379 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000013   message : update|ExiOrder.KGI.20210415-000013-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:34:40 pm|35|ExecutionReport|58|Testing|11|20210415-000013|37|3988_902401|198|HK20210415AAAAAAAAyn|31|0|14|0|17|HK20210415AAAAAAAAyn|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:34:40.385 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:34:40.388 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:34:40.391 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000013   message : update|ExiOrder.KGI.20210415-000013-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:34:40 pm|35|ExecutionReport|58|Testing|11|20210415-000013|37|3988_905473|198|HK20210415AAAAAAAAyo|31|0|14|0|17|HK20210415AAAAAAAAyo|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:34:41.286 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:34:41.288 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:34:41.289 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000013   message : update|ExiOrder.KGI.20210415-000013-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:34:41 pm|35|ExecutionReport|58|Testing|11|20210415-000013|37|3988_905473|198|HK20210415AAAAAAAAyp|31|0|14|0|17|HK20210415AAAAAAAAyp|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:34:41.291 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:34:41.292 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:34:41.294 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000013   message : update|ExiOrder.KGI.20210415-000013-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:34:41 pm|35|ExecutionReport|58|Testing|11|20210415-000013|37|3988_905473|198|HK20210415AAAAAAAAyq|31|0|14|0|17|HK20210415AAAAAAAAyq|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 13:41:20.243 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:41:20.244 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:41:20.247 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000014   message : update|ExiOrder.KGI.20210415-000014-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:41:20 pm|35|ExecutionReport|58|Testing|11|20210415-000014|37|3988_987905|198|HK20210415AAAAAAAAyr|31|0|14|0|17|HK20210415AAAAAAAAyr|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:41:24.987 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:41:24.988 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:41:24.990 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000014   message : update|ExiOrder.KGI.20210415-000014-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:41:24 pm|35|ExecutionReport|58|Testing|11|20210415-000014|37|3988_987905|198|HK20210415AAAAAAAAys|31|0|14|0|17|HK20210415AAAAAAAAys|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:41:24.998 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:41:25.000 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:41:25.004 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000014   message : update|ExiOrder.KGI.20210415-000014-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:41:24 pm|35|ExecutionReport|58|Testing|11|20210415-000014|37|3988_988161|198|HK20210415AAAAAAAAyt|31|0|14|0|17|HK20210415AAAAAAAAyt|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:41:30.118 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:41:30.119 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:41:30.120 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000014   message : update|ExiOrder.KGI.20210415-000014-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:41:30 pm|35|ExecutionReport|58|Testing|11|20210415-000014|37|3988_988161|198|HK20210415AAAAAAAAyu|31|0|14|0|17|HK20210415AAAAAAAAyu|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:41:30.122 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:41:30.123 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:41:30.124 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000014   message : update|ExiOrder.KGI.20210415-000014-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:41:30 pm|35|ExecutionReport|58|Testing|11|20210415-000014|37|3988_988161|198|HK20210415AAAAAAAAyv|31|0|14|0|17|HK20210415AAAAAAAAyv|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 13:46:06.472 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.473 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.474 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000015   message : update|ExiOrder.KGI.20210415-000015-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210415AAAAAAAAyw|31|0|14|0|17|HK20210415AAAAAAAAyw|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:46:06.477 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.479 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.484 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000007   message : update|ExiOrder.KGI.20210415-000007-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210414AAAAAAAAxL|31|3.09|14|3000|17|HK20210414AAAAAAAAxL|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:46:06.488 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.490 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.492 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000007   message : update|Trade.KGI.20210415-000007-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000007|37|3988_140033|198|HK20210414AAAAAAAAxL|31|3.09|14|3000|17|HK20210414AAAAAAAAxL|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:46:06.496 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.499 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.500 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000015   message : update|ExiOrder.KGI.20210415-000015-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210414AAAAAAAAxM|31|3.09|14|2000|17|HK20210414AAAAAAAAxM|31|3.09|54|2|109|FIX_USR|55|3988|39|6|
+2021-04-15 13:46:06.502 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.504 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.508 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000015   message : update|Trade.KGI.20210415-000015-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210414AAAAAAAAxM|31|3.09|14|2000|17|HK20210414AAAAAAAAxM|31|3.09|54|2|109|***|55|3988|
+2021-04-15 13:46:06.511 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.514 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.516 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000008   message : update|ExiOrder.KGI.20210415-000008-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000008|37|3988_434433|198|HK20210414AAAAAAAAxP|31|3.09|14|1000|17|HK20210414AAAAAAAAxP|31|3.09|54|1|109|FIX_USR|55|3988|39|6|
+2021-04-15 13:46:06.517 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.518 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.523 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000008   message : update|Trade.KGI.20210415-000008-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000008|37|3988_434433|198|HK20210414AAAAAAAAxP|31|3.09|14|1000|17|HK20210414AAAAAAAAxP|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:46:06.530 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.532 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.533 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000015   message : update|ExiOrder.KGI.20210415-000015-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210414AAAAAAAAxQ|31|3.09|14|3000|17|HK20210414AAAAAAAAxQ|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:46:06.534 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:06.534 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:06.535 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000015   message : update|Trade.KGI.20210415-000015-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:06 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210414AAAAAAAAxQ|31|3.09|14|3000|17|HK20210414AAAAAAAAxQ|31|3.09|54|2|109|***|55|3988|
+2021-04-15 13:46:12.552 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:46:12.553 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:46:12.556 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000015   message : update|ExiOrder.KGI.20210415-000015-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:46:12 pm|35|ExecutionReport|58|Testing|11|20210415-000015|37|3988_1013761|198|HK20210415AAAAAAAAyx|31|0|14|3000|17|HK20210415AAAAAAAAyx|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:49:05.933 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:49:05.934 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:49:05.938 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000017   message : update|ExiOrder.KGI.20210415-000017-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:49:05 pm|35|ExecutionReport|58|Testing|11|20210415-000017|37|3988_1024513|198|HK20210415AAAAAAAAyy|31|0|14|0|17|HK20210415AAAAAAAAyy|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:49:05.940 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:49:05.941 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:49:05.943 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000008   message : update|ExiOrder.KGI.20210415-000008-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:49:05 pm|35|ExecutionReport|58|Testing|11|20210415-000008|37|3988_434433|198|HK20210415AAAAAAAAyz|31|3.09|14|3000|17|HK20210415AAAAAAAAyz|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:50:37.286 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:50:37.288 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:50:37.290 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000018   message : update|ExiOrder.KGI.20210415-000018-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:50:37 pm|35|ExecutionReport|58|Testing|11|20210415-000018|37|3988_1035521|198|HK20210415AAAAAAAAy1|31|0|14|0|17|HK20210415AAAAAAAAy1|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:50:37.294 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:50:37.295 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:50:37.297 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000009   message : update|ExiOrder.KGI.20210415-000009-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:50:37 pm|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_452097|198|HK20210415AAAAAAAAy2|31|3.09|14|4000|17|HK20210415AAAAAAAAy2|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:50:37.298 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:50:37.299 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:50:37.301 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000009   message : update|Trade.KGI.20210415-000009-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:50:37 pm|35|ExecutionReport|58|Testing|11|20210415-000009|37|3988_452097|198|HK20210415AAAAAAAAy2|31|3.09|14|4000|17|HK20210415AAAAAAAAy2|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:50:37.302 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:50:37.303 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:50:37.304 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000018   message : update|ExiOrder.KGI.20210415-000018-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:50:37 pm|35|ExecutionReport|58|Testing|11|20210415-000018|37|3988_1035521|198|HK20210415AAAAAAAAy3|31|3.09|14|3000|17|HK20210415AAAAAAAAy3|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:50:37.306 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:50:37.308 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:50:37.310 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000018   message : update|Trade.KGI.20210415-000018-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:50:37 pm|35|ExecutionReport|58|Testing|11|20210415-000018|37|3988_1035521|198|HK20210415AAAAAAAAy3|31|3.09|14|3000|17|HK20210415AAAAAAAAy3|31|3.09|54|2|109|***|55|3988|
+2021-04-15 13:53:26.555 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:53:26.556 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:53:26.558 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000020   message : update|ExiOrder.KGI.20210415-000020-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:53:26 pm|35|ExecutionReport|58|Testing|11|20210415-000020|37|3988_1059329|198|HK20210415AAAAAAAAy4|31|0|14|0|17|HK20210415AAAAAAAAy4|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:53:26.562 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:53:26.563 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:53:26.564 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:53:26 pm|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_467201|198|HK20210415AAAAAAAAy5|31|3.09|14|3000|17|HK20210415AAAAAAAAy5|31|3.09|54|1|109|FIX_USR|55|3988|39|6|
+2021-04-15 13:53:26.567 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:53:26.568 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:53:26.571 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000010   message : update|Trade.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:53:26 pm|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_467201|198|HK20210415AAAAAAAAy5|31|3.09|14|3000|17|HK20210415AAAAAAAAy5|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:53:26.574 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:53:26.575 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:53:26.579 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000020   message : update|ExiOrder.KGI.20210415-000020-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:53:26 pm|35|ExecutionReport|58|Testing|11|20210415-000020|37|3988_1059329|198|HK20210415AAAAAAAAy6|31|3.09|14|3000|17|HK20210415AAAAAAAAy6|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:53:26.581 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:53:26.582 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:53:26.583 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000020   message : update|Trade.KGI.20210415-000020-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:53:26 pm|35|ExecutionReport|58|Testing|11|20210415-000020|37|3988_1059329|198|HK20210415AAAAAAAAy6|31|3.09|14|3000|17|HK20210415AAAAAAAAy6|31|3.09|54|2|109|***|55|3988|
+2021-04-15 13:56:46.481 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:56:46.484 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:56:46.485 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000021   message : update|ExiOrder.KGI.20210415-000021-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:56:46 pm|35|ExecutionReport|58|Testing|11|20210415-000021|37|3988_1085185|198|HK20210415AAAAAAAAy7|31|0|14|0|17|HK20210415AAAAAAAAy7|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 13:56:46.510 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:56:46.513 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:56:46.517 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000010   message : update|ExiOrder.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:56:46 pm|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_467201|198|HK20210415AAAAAAAAy8|31|3.09|14|4000|17|HK20210415AAAAAAAAy8|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:56:46.533 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:56:46.534 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:56:46.536 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000010   message : update|Trade.KGI.20210415-000010-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:56:46 pm|35|ExecutionReport|58|Testing|11|20210415-000010|37|3988_467201|198|HK20210415AAAAAAAAy8|31|3.09|14|4000|17|HK20210415AAAAAAAAy8|31|3.09|54|1|109|***|55|3988|
+2021-04-15 13:56:46.540 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:56:46.541 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:56:46.542 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000021   message : update|ExiOrder.KGI.20210415-000021-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:56:46 pm|35|ExecutionReport|58|Testing|11|20210415-000021|37|3988_1085185|198|HK20210415AAAAAAAAy9|31|3.09|14|1000|17|HK20210415AAAAAAAAy9|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 13:56:46.544 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 13:56:46.545 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 13:56:46.548 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000021   message : update|Trade.KGI.20210415-000021-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 1:56:46 pm|35|ExecutionReport|58|Testing|11|20210415-000021|37|3988_1085185|198|HK20210415AAAAAAAAy9|31|3.09|14|1000|17|HK20210415AAAAAAAAy9|31|3.09|54|2|109|***|55|3988|
+2021-04-15 14:01:09.176 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:09.178 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:09.180 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000022   message : update|ExiOrder.KGI.20210415-000022-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:09 pm|35|ExecutionReport|58|Testing|11|20210415-000022|37|3988_1127937|198|HK20210415AAAAAAAAy+|31|0|14|0|17|HK20210415AAAAAAAAy+|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:01:38.528 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:38.529 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:38.533 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000023   message : update|ExiOrder.KGI.20210415-000023-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:38 pm|35|ExecutionReport|58|Testing|11|20210415-000023|37|3988_1132801|198|HK20210415AAAAAAAAy/|31|0|14|0|17|HK20210415AAAAAAAAy/|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:01:38.534 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:38.535 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:38.536 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000023   message : update|ExiOrder.KGI.20210415-000023-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:38 pm|35|ExecutionReport|58|Testing|11|20210415-000023|37|3988_1132801|198|HK20210415AAAAAAAAzA|31|3.09|14|1000|17|HK20210415AAAAAAAAzA|31|3.09|54|1|109|FIX_USR|55|3988|39|6|
+2021-04-15 14:01:38.537 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:38.538 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:38.539 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000023   message : update|Trade.KGI.20210415-000023-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:38 pm|35|ExecutionReport|58|Testing|11|20210415-000023|37|3988_1132801|198|HK20210415AAAAAAAAzA|31|3.09|14|1000|17|HK20210415AAAAAAAAzA|31|3.09|54|1|109|***|55|3988|
+2021-04-15 14:01:38.540 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:38.540 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:38.543 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000022   message : update|ExiOrder.KGI.20210415-000022-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:38 pm|35|ExecutionReport|58|Testing|11|20210415-000022|37|3988_1127937|198|HK20210415AAAAAAAAzB|31|3.09|14|1000|17|HK20210415AAAAAAAAzB|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 14:01:38.544 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:01:38.544 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:01:38.545 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000022   message : update|Trade.KGI.20210415-000022-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:01:38 pm|35|ExecutionReport|58|Testing|11|20210415-000022|37|3988_1127937|198|HK20210415AAAAAAAAzB|31|3.09|14|1000|17|HK20210415AAAAAAAAzB|31|3.09|54|2|109|***|55|3988|
+2021-04-15 14:02:30.679 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:02:30.681 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:02:30.683 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000024   message : update|ExiOrder.KGI.20210415-000024-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:02:30 pm|35|ExecutionReport|58|Testing|11|20210415-000024|37|3988_1141761|198|HK20210415AAAAAAAAzC|31|0|14|0|17|HK20210415AAAAAAAAzC|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:02:30.685 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:02:30.686 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:02:30.690 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000023   message : update|ExiOrder.KGI.20210415-000023-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:02:30 pm|35|ExecutionReport|58|Testing|11|20210415-000023|37|3988_1132801|198|HK20210415AAAAAAAAzD|31|3.09|14|2000|17|HK20210415AAAAAAAAzD|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 14:02:30.693 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:02:30.694 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:02:30.700 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000023   message : update|Trade.KGI.20210415-000023-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:02:30 pm|35|ExecutionReport|58|Testing|11|20210415-000023|37|3988_1132801|198|HK20210415AAAAAAAAzD|31|3.09|14|1000|17|HK20210415AAAAAAAAzD|31|3.09|54|1|109|***|55|3988|
+2021-04-15 14:02:30.703 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:02:30.707 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:02:30.709 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000024   message : update|ExiOrder.KGI.20210415-000024-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:02:30 pm|35|ExecutionReport|58|Testing|11|20210415-000024|37|3988_1141761|198|HK20210415AAAAAAAAzE|31|3.09|14|1000|17|HK20210415AAAAAAAAzE|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 14:02:30.713 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:02:30.714 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:02:30.715 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000024   message : update|Trade.KGI.20210415-000024-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:02:30 pm|35|ExecutionReport|58|Testing|11|20210415-000024|37|3988_1141761|198|HK20210415AAAAAAAAzE|31|3.09|14|1000|17|HK20210415AAAAAAAAzE|31|3.09|54|2|109|***|55|3988|
+2021-04-15 14:16:15.164 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:16:15.165 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:16:15.188 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000025   message : update|ExiOrder.KGI.20210415-000025-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:16:15 pm|35|ExecutionReport|58|Testing|11|20210415-000025|37|3988_1205505|198|HK20210415AAAAAAAAzH|31|0|14|0|17|HK20210415AAAAAAAAzH|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:17:03.948 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:03.949 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:03.953 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:03 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1209345|198|HK20210415AAAAAAAAzK|31|0|14|0|17|HK20210415AAAAAAAAzK|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:17:26.913 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:26.914 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:26.916 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000027   message : update|ExiOrder.KGI.20210415-000027-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:26 pm|35|ExecutionReport|58|Testing|11|20210415-000027|37|3988_1211905|198|HK20210415AAAAAAAAzL|31|0|14|0|17|HK20210415AAAAAAAAzL|31|0|54|2|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:17:26.918 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:26.919 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:26.920 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000025   message : update|ExiOrder.KGI.20210415-000025-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:26 pm|35|ExecutionReport|58|Testing|11|20210415-000025|37|3988_1205505|198|HK20210415AAAAAAAAzM|31|3.09|14|1000|17|HK20210415AAAAAAAAzM|31|3.09|54|1|109|FIX_USR|55|3988|39|3|
+2021-04-15 14:17:26.922 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:26.922 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:26.924 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000025   message : update|Trade.KGI.20210415-000025-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:26 pm|35|ExecutionReport|58|Testing|11|20210415-000025|37|3988_1205505|198|HK20210415AAAAAAAAzM|31|3.09|14|1000|17|HK20210415AAAAAAAAzM|31|3.09|54|1|109|***|55|3988|
+2021-04-15 14:17:26.924 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:26.925 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:26.926 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000027   message : update|ExiOrder.KGI.20210415-000027-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:26 pm|35|ExecutionReport|58|Testing|11|20210415-000027|37|3988_1211905|198|HK20210415AAAAAAAAzN|31|3.09|14|1000|17|HK20210415AAAAAAAAzN|31|3.09|54|2|109|FIX_USR|55|3988|39|3|
+2021-04-15 14:17:26.926 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:26.927 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:26.928 +08:00 [ERR] LastValueCache ::: topic : Trade.KGI.20210415-000027   message : update|Trade.KGI.20210415-000027-001|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:26 pm|35|ExecutionReport|58|Testing|11|20210415-000027|37|3988_1211905|198|HK20210415AAAAAAAAzN|31|3.09|14|1000|17|HK20210415AAAAAAAAzN|31|3.09|54|2|109|***|55|3988|
+2021-04-15 14:17:37.010 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:37.012 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:37.016 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:37 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1209345|198|HK20210415AAAAAAAAzO|31|0|14|0|17|HK20210415AAAAAAAAzO|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:17:37.017 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:17:37.018 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:17:37.019 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-002|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:17:37 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1212161|198|HK20210415AAAAAAAAzP|31|0|14|0|17|HK20210415AAAAAAAAzP|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:19:04.575 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:19:04.577 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:19:04.582 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:19:04 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1212161|198|HK20210415AAAAAAAAzS|31|0|14|0|17|HK20210415AAAAAAAAzS|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-15 14:19:04.583 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:19:04.584 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:19:04.586 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-003|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:19:04 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1212161|198|HK20210415AAAAAAAAzT|31|0|14|0|17|HK20210415AAAAAAAAzT|31|0|54|1|109|FIX_USR|55|3988|39|4|
+2021-04-15 14:19:32.468 +08:00 [ERR] LastValueCache ::: Error in Update
+2021-04-15 14:19:32.470 +08:00 [ERR] LastValueCache ::: System.ArgumentException: An item with the same key has already been added. Key: 31
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at Arrow.Utilites.ConvertToDictionary(Byte[] messageReceived) in C:\Users\doom_\Documents\Repository\DDS\Utilites.cs:line 343
+   at Arrow.LastValueCache.Update(String topic, Byte[] message) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 31
+2021-04-15 14:19:32.471 +08:00 [ERR] LastValueCache ::: topic : ExiOrder.KGI.20210415-000026   message : update|ExiOrder.KGI.20210415-000026-004|930|SockID|49|AppID|50|FIX-KGI|56|ORS|42|15/4/2021 2:19:32 pm|35|ExecutionReport|58|Testing|11|20210415-000026|37|3988_1212161|198|HK20210415AAAAAAAAzU|31|0|14|0|17|HK20210415AAAAAAAAzU|31|0|54|1|109|FIX_USR|55|3988|39|2|
+2021-04-19 13:39:07.904 +08:00 [INF] =======================
+2021-04-19 13:39:07.941 +08:00 [INF] === DDS initialised ===
+2021-04-19 13:39:07.943 +08:00 [INF] =======================
+2021-04-29 11:13:35.779 +08:00 [INF] =======================
+2021-04-29 11:13:35.797 +08:00 [INF] === DDS initialised ===
+2021-04-29 11:13:35.798 +08:00 [INF] =======================
+2021-04-29 12:28:51.188 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:28:51.230 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:31:09.492 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:31:09.494 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:32:51.947 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:32:51.949 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:33:39.776 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:33:39.778 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:35:25.220 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:35:25.221 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:35:43.156 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:35:43.157 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:36:52.740 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:36:52.742 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:37:56.813 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:37:56.815 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:39:58.834 +08:00 [INF] =======================
+2021-04-29 12:39:58.860 +08:00 [INF] === DDS initialised ===
+2021-04-29 12:39:58.861 +08:00 [INF] =======================
+2021-04-29 12:41:14.971 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:41:15.024 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-29 12:42:30.054 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:42:30.595 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 169
+2021-04-30 13:35:55.713 +08:00 [INF] =======================
+2021-04-30 13:35:55.757 +08:00 [INF] === DDS initialised ===
+2021-04-30 13:35:55.759 +08:00 [INF] =======================

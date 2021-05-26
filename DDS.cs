@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NetMQ;
 using Serilog;
 
 namespace Arrow
 {
     public class DDS
-    {        
-        private NetMQ.Sockets.SubscriberSocket _root;           // the NetMQ socket (sub socket) connecting to the root DDS, subscribe data from publisher (PUB socket), dedicated to DDS connection
-        private NetMQ.Sockets.SubscriberSocket _sub;            // the NetMQ socket (sub socket) listening for publisher connection, subscribe data from publisher (PUB socket)
-        private NetMQ.Sockets.PublisherSocket _pub;             // the NetMQ socket (X Pub socket) listening for subscriber connection, publish data to subscriber (SUB socket)            
-        private NetMQ.Sockets.RouterSocket _router;             // the NetMQ socket (router socket) listening for subscriber connection, reply LVC to client (REQ socket)
+    {                
+        private NetMQ.Sockets.SubscriberSocket _sub;            // the NetMQ socket (Sub socket) listening for publisher connection, subscribe data from publisher (PUB socket)
+        private NetMQ.Sockets.PublisherSocket _pub;             // the NetMQ socket (Pub socket) listening for subscriber connection, publish data to subscriber (SUB socket)            
+        private NetMQ.Sockets.RouterSocket _router;             // the NetMQ socket (Router socket) listening for subscriber connection, reply LVC to client (REQ socket)
+        private NetMQ.Sockets.SubscriberSocket _root;           // the NetMQ socket (Sub socket) connecting to the root DDS, subscribe data from publisher (PUB socket), dedicated to DDS connection
         private NetMQ.NetMQPoller _poller;                      // the NetMQ poller to manage NetMQ sockets                        
   
         public string pubAddr = string.Empty;                   // the publisher ip address and port
@@ -20,12 +18,7 @@ namespace Arrow
         public string rootAddr = string.Empty;                  // the root ip address and port
 
         private LastValueCache _lvc;
-        private Int64 _msgRxCounter = 0;                        // the counter of message received 
-
-        public Int64 MsgRxCounter
-        {
-            get { return _msgRxCounter; }          
-        }        
+        private Int64 _msgRxCounter = 0;                        // the counter of message received         
 
         /// <summary>
         /// constructor
@@ -49,38 +42,35 @@ namespace Arrow
             {
                 _lvc = new LastValueCache();
 
+                _poller = new NetMQPoller();
+
                 _sub = new NetMQ.Sockets.SubscriberSocket();
                 _sub.Options.ReceiveHighWatermark = 5000;
                 _sub.ReceiveReady += Sub_ReceiveReady;
+                _sub.Bind("tcp://" + sub.IP + ":" + sub.Port);
+                _sub.SubscribeToAnyTopic();
 
                 _pub = new NetMQ.Sockets.PublisherSocket();
                 _pub.Options.SendHighWatermark = 5000;
-                _pub.Options.XPubVerbose = true;                
-
-                _root = new NetMQ.Sockets.SubscriberSocket();
-                _root.Options.ReceiveHighWatermark = 5000;
-                _root.ReceiveReady += Root_ReceiveReady;
+                _pub.Options.XPubVerbose = true;
+                _pub.Bind("tcp://" + pub.IP + ":" + pub.Port);
 
                 _router = new NetMQ.Sockets.RouterSocket();
                 _router.Options.ReceiveHighWatermark = 100;
                 _router.ReceiveReady += Router_ReceiveReady;
-
-                _poller = new NetMQPoller();
+                _router.Bind("tcp://" + router.IP + ":" + router.Port);
 
                 if (root != null)
                 {
+                    _root = new NetMQ.Sockets.SubscriberSocket();
+                    _root.Options.ReceiveHighWatermark = 5000;
+                    _root.ReceiveReady += Root_ReceiveReady;
+
                     _root.Connect("tcp://" + root.IP + ":" + root.Port);
                     _root.SubscribeToAnyTopic();
                     _poller.Add(_root);
                 }
-
-                _sub.Bind("tcp://" + sub.IP + ":" + sub.Port);
-                _sub.SubscribeToAnyTopic();
-
-                _pub.Bind("tcp://" + pub.IP + ":" + pub.Port);
-
-                _router.Bind("tcp://" + router.IP + ":" + router.Port);
-
+                                               
                 _poller.Add(_sub);
                 _poller.Add(_pub);
                 _poller.Add(_router);
@@ -99,6 +89,15 @@ namespace Arrow
         public void Stop()
         {
             _poller.Stop();
+
+            _pub.Close();
+            _sub.Close();
+            _router.Close();
+
+            if (_root != null)
+            {
+                _root.Close();
+            }
         }
 
         /// <summary>
@@ -164,38 +163,107 @@ namespace Arrow
         {
             try
             {
-                // expected request frame format :
+                // expected request frame format from Dealer sock:
                 // Frame[0] sock id                
                 // Frame[1] topic
+                // Frame[2] tag     // optional
+                //////
+                // expected request frame format from Request sock:
+                // Frame[0] sock id                
+                // Frame[1]         // blank frame
+                // Frame[2] topic                
+
                 NetMQMessage nmqMsgRx = _router.ReceiveMultipartMessage();
 
+                // reuse the NetMQMessage, keep the socket ID (Frame[0]), remove topic (Frame[1])                                
                 NetMQMessage nmqMsgTx = new NetMQMessage();
-                string topic = nmqMsgRx[1].ConvertToString();
+                string topic;
 
-                KeyValuePair<string, byte[]>[] messages = _lvc.Get(topic);
-                if (messages != null)
+                if (nmqMsgRx[1].BufferSize != 0)
                 {
-                    for (int i = 0; i < messages.Length; i++)
+                    #region Dealer socket request
+                    // Dealer socket request recevied
+                    topic = nmqMsgRx[1].ConvertToString();
+
+                    if (nmqMsgRx.FrameCount == 2)           // request full LVC image
                     {
-                        nmqMsgTx.Append(nmqMsgRx[0]);
-                        nmqMsgTx.Append(messages[i].Key);
-                        nmqMsgTx.Append(messages[i].Value);
+                        KeyValuePair<string, byte[]>[] messages = _lvc.TryGet(topic);
+                        if (messages != null)
+                        {
+                            for (int i = 0; i < messages.Length; i++)
+                            {
+                                nmqMsgTx.Append(nmqMsgRx[0]);
+                                nmqMsgTx.Append(messages[i].Key);
+                                nmqMsgTx.Append(messages[i].Value);
+
+                                _router.TrySendMultipartMessage(nmqMsgTx);
+
+                                nmqMsgTx.Clear();
+                            }
+                        }
+                        else
+                        {
+                            nmqMsgTx.Append(nmqMsgRx[0]);
+                            nmqMsgTx.Append(topic);
+                            nmqMsgTx.Append("0|" + topic + "|58|topic not found|");
+
+                            _router.TrySendMultipartMessage(nmqMsgTx);                            
+                        }
+                    }
+                    else if (nmqMsgRx.FrameCount == 3)      // request tag value only
+                    {
+                        byte[] value = _lvc.TryGet(topic, Utilites.GetIntFromAsciiEncodedText(nmqMsgRx[2].Buffer));
+                        
+                        if (value != null)
+                        {
+                            nmqMsgTx.Append(nmqMsgRx[0]);
+                            nmqMsgTx.Append(topic);
+                            nmqMsgTx.Append(value);                       
+                        }
+                        else
+                        {
+                            nmqMsgTx.Append(nmqMsgRx[0]);
+                            nmqMsgTx.Append(topic);
+                            nmqMsgTx.Append(nmqMsgRx[2].ConvertToString() + "||");
+                        }
 
                         _router.TrySendMultipartMessage(nmqMsgTx);
-
-                        nmqMsgTx.Clear();
                     }
+                    #endregion
                 }
                 else
                 {
-                    nmqMsgTx.Append(nmqMsgRx[0]);
-                    nmqMsgTx.Append(topic);
-                    nmqMsgTx.Append("image|" + topic + "|10039|ticker not found|" + '\n');
+                    #region Request socket request
+                    // Request socket request recevied
+                    topic = nmqMsgRx[2].ConvertToString();
 
-                    _router.TrySendMultipartMessage(nmqMsgTx);
+                    KeyValuePair<string, byte[]>[] messages = _lvc.TryGet(topic);
 
-                    nmqMsgTx.Clear();
-                }                 
+                    if (messages != null)
+                    {
+                        for (int i = 0; i < messages.Length; i++)
+                        {
+                            nmqMsgTx.Append(nmqMsgRx[0]);
+                            nmqMsgTx.AppendEmptyFrame();
+                            nmqMsgTx.Append(messages[i].Key);
+                            nmqMsgTx.Append(messages[i].Value);
+
+                            _router.TrySendMultipartMessage(nmqMsgTx);
+
+                            nmqMsgTx.Clear();
+                        }
+                    }
+                    else
+                    {
+                        nmqMsgTx.Append(nmqMsgRx[0]);
+                        nmqMsgTx.AppendEmptyFrame();
+                        nmqMsgTx.Append(topic);
+                        nmqMsgTx.Append("0|" + topic + "|58|topic not found|");
+
+                        _router.TrySendMultipartMessage(nmqMsgTx);                        
+                    }
+                    #endregion
+                }
             }
             catch (Exception ex)
             {

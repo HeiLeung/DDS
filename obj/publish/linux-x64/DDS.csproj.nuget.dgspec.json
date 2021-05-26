@@ -14,10 +14,12 @@
         "outputPath": "C:\\Users\\doom_\\Documents\\Repository\\DDS\\obj\\publish\\linux-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\doom_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,6 +73,14 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -86,7 +96,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[5.0.2, 5.0.2]"
+              "version": "[5.0.6, 5.0.6]"
             }
           ],
           "frameworkReferences": {
@@ -94,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

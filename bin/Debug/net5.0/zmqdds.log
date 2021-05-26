@@ -1,0 +1,61 @@
+2021-04-09 15:34:20.692 +08:00 [INF] =======================
+2021-04-09 15:34:20.780 +08:00 [INF] === DDS initialised ===
+2021-04-09 15:34:20.786 +08:00 [INF] =======================
+2021-04-09 16:13:30.911 +08:00 [INF] =======================
+2021-04-09 16:13:30.980 +08:00 [INF] === DDS initialised ===
+2021-04-09 16:13:30.989 +08:00 [INF] =======================
+2021-04-29 12:48:34.192 +08:00 [INF] =======================
+2021-04-29 12:48:34.215 +08:00 [INF] === DDS initialised ===
+2021-04-29 12:48:34.215 +08:00 [INF] =======================
+2021-04-29 12:50:10.794 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 12:50:10.861 +08:00 [ERR] ROUTER ::: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 209
+2021-04-29 13:11:06.421 +08:00 [INF] =======================
+2021-04-29 13:11:06.443 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:11:06.444 +08:00 [INF] =======================
+2021-04-29 13:15:34.222 +08:00 [INF] =======================
+2021-04-29 13:15:34.244 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:15:34.245 +08:00 [INF] =======================
+2021-04-29 13:25:50.052 +08:00 [INF] =======================
+2021-04-29 13:25:50.072 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:25:50.072 +08:00 [INF] =======================
+2021-04-29 13:26:14.403 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 13:26:14.464 +08:00 [ERR] ROUTER ::: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at NetMQ.NetworkOrderBitsConverter.ToInt32(Byte[] buffer, Int32 offset)
+   at NetMQ.NetMQFrame.ConvertToInt32()
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 210
+2021-04-29 13:30:26.086 +08:00 [INF] =======================
+2021-04-29 13:30:26.104 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:30:26.105 +08:00 [INF] =======================
+2021-04-29 13:31:11.458 +08:00 [INF] =======================
+2021-04-29 13:31:11.481 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:31:11.482 +08:00 [INF] =======================
+2021-04-29 13:31:40.080 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 13:31:40.136 +08:00 [ERR] ROUTER ::: System.Collections.Generic.KeyNotFoundException: The given key '2' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Arrow.LastValueCache.GetValueString(String topic, Int32 tag) in C:\Users\doom_\Documents\Repository\DDS\LastValueCache.cs:line 120
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 210
+2021-04-29 13:32:51.115 +08:00 [INF] =======================
+2021-04-29 13:32:51.143 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:32:51.144 +08:00 [INF] =======================
+2021-04-29 13:33:57.191 +08:00 [INF] =======================
+2021-04-29 13:33:57.216 +08:00 [INF] === DDS initialised ===
+2021-04-29 13:33:57.217 +08:00 [INF] =======================
+2021-04-29 13:34:39.564 +08:00 [ERR] ROUTER ::: Error occur while receiving message from client
+2021-04-29 13:34:39.631 +08:00 [ERR] ROUTER ::: System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at NetMQ.NetMQFrame..ctor(String message)
+   at NetMQ.NetMQMessage.Append(String message)
+   at Arrow.DDS.Router_ReceiveReady(Object sender, NetMQSocketEventArgs e) in C:\Users\doom_\Documents\Repository\DDS\DDS.cs:line 210
+2021-04-29 14:00:11.431 +08:00 [INF] =======================
+2021-04-29 14:00:11.454 +08:00 [INF] === DDS initialised ===
+2021-04-29 14:00:11.454 +08:00 [INF] =======================
+2021-04-29 14:14:47.220 +08:00 [INF] =======================
+2021-04-29 14:14:47.280 +08:00 [INF] === DDS initialised ===
+2021-04-29 14:14:47.280 +08:00 [INF] =======================
+2021-04-29 14:18:14.912 +08:00 [INF] =======================
+2021-04-29 14:18:14.934 +08:00 [INF] === DDS initialised ===
+2021-04-29 14:18:14.935 +08:00 [INF] =======================

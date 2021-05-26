@@ -1,6 +1,6 @@
 {
   "DDS": {
-    "ConnectToRoot": false,
+    "ConnectToRoot": true,
     "Pub": {
       "IP": "*",
       "Port": 10001,
@@ -17,8 +17,8 @@
       "HWM": 500
     },
     "Root": {
-      "IP": "*",
-      "Port": 10002,
+      "IP": "34.92.112.125",
+      "Port": 10001,
       "HWM": 500
     }
   },

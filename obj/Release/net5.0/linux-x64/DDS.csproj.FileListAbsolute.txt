@@ -107,3 +107,7 @@ C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\Serilog.Sin
 C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\System.Net.Http.WinHttpHandler.dll
 C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\System.Private.ServiceModel.dll
 C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\System.ServiceModel.Primitives.dll
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\xunit.abstractions.dll
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\xunit.assert.dll
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\xunit.core.dll
+C:\Users\doom_\Documents\Repository\DDS\bin\Release\net5.0\linux-x64\xunit.execution.dotnet.dll
