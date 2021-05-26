@@ -205,7 +205,8 @@ namespace Arrow
                         {
                             nmqMsgTx.Append(nmqMsgRx[0]);
                             nmqMsgTx.Append(topic);
-                            nmqMsgTx.Append("0|" + topic + "|58|topic not found|");
+                            //nmqMsgTx.Append("0|" + topic + "|58|topic not found|");
+                            nmqMsgTx.Append("0|" + topic + "|");
 
                             _router.TrySendMultipartMessage(nmqMsgTx);                            
                         }
